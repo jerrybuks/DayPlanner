@@ -1,0 +1,324 @@
+
+
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 62.5%;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+
+.right {
+    float: right;
+}
+
+.red {
+    color: #FF5049 !important;
+}
+
+.red-focus:focus {
+    border: 1px solid #FF5049 !important;
+}
+
+
+
+
+
+/**********************************************
+*** TOP PART
+**********************************************/
+
+.top {
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(backgr.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.Daily-plan {
+    position: absolute;
+    width: 35rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #b9b8b8;
+}
+
+.Daily-plan__title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.Daily-plan__note {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.Daily-plan__morning,
+.Daily-plan__afternoon,
+.Daily-plan__night {
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.Daily-plan__morning {
+    background-color: #ff000091;
+}
+
+
+.Daily-plan__afternoon {
+
+    background-color: #4c7294b7;
+}
+
+.Daily-plan__night {
+    margin-bottom: 1rem;
+    background-color: #000000b0;
+}
+
+.Daily-plan__morning--text,
+.Daily-plan__afternoon--text,
+.Daily-plan__night--text {
+    float: left;
+    font-size: 1rem;
+    color: #b9b8b8;
+    margin-top: .2rem;
+}
+
+.Daily-plan__morning--value,
+.Daily-plan__afternoon--value,
+.Daily-plan__night--value {
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+/**********************************************
+*** BOTTOM PART
+**********************************************/
+
+/***** FORM *****/
+
+.add {
+    padding: 14px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
+}
+
+.add__container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.add__interval {
+    width: 60px;
+    height: 44px;
+    font-size: 18px;
+    color: inherit;
+    margin-right: 10px;
+    font-weight: 300;
+    transition: border 0.3s;
+    font-family: inherit;
+}
+
+.add__time {
+    width: 7rem;
+    border: 1px solid #e7e7e7;
+    height: 44px;
+    font-size: 1rem;
+    color: inherit;
+    background-color: #fff;
+    margin-right: 2rem;
+    font-weight: 300;
+    font-family: inherit;
+    transition: border 0.3s;
+}
+
+.add__plan {
+    width: 400px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+
+.add__btn {
+    font-size: 20px;
+    /*if button, it is 35px*/
+    background-color: #4c7394;
+    padding: .6rem 3rem;
+    border: 1px solid #4c7394;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+}
+
+.add__btn:active {
+    transform: translateY(2px);
+}
+
+.add__time:focus,
+.add__description:focus,
+.add__value:focus {
+    outline: none;
+    border: 1px solid #4c7394;
+    ;
+}
+
+.add__btn:hover {
+    background-color: #42627e;
+}
+
+/***** LISTS *****/
+
+.tasks {
+    padding: 3rem;
+}
+
+.task-morning {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.task-afternoon {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.task-night {
+    width: 60%;
+    margin: 0 auto;
+}
+
+ .tasks__title {
+     font-size: 1.2rem;
+     text-transform: uppercase;
+     margin-bottom: 2rem;
+     text-align: center;
+ }
+
+ .tasks__title--morning {
+    color: #FF0000;
+    
+ }
+
+.tasks__title--afternoon {
+    color: #4c7394;
+}
+
+
+.item {
+    padding: 13px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.item:first-child {
+    border-top: 1px solid #e7e7e7;
+}
+
+.item:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.item:last-child {
+    margin-bottom: 4rem;
+}
+
+.item__morningPlan,
+.item__afternoonPlan,
+.item__nightPlan {
+    float: left;
+    font-size: 1.3rem;
+    color: #000;
+    text-transform: lowercase;
+}
+
+.item__time {
+
+    float: left;
+    font-size: 1.1rem;
+    transition: transform 0.3s;
+    margin-right: 2px;
+}
+
+
+
+.task-morning .item__time,
+.task-morning .item__delete--btn {
+    color: #FF0000;
+}
+
+ .task-afternoon .item__time,
+.task-afternoon .item__delete--btn {
+    color: #4c7394;
+}
+
+.task-night .item__time,
+.task-night .item__delete--btn {
+    color: #000;
+}
+
+.item__delete {
+    float: left;
+}
+
+.item__delete--btn {
+    font-size: 1.5rem;
+    /*previously 22px*/
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    display: none;
+}
+
+.item__delete--btn:focus {
+    outline: none;
+}
+
+.item__delete--btn:active {
+    transform: translateY(2px);
+}
+
+.item:hover .item__delete--btn {
+    display: block;
+}
+
+.item:hover .item__value {
+    transform: translateX(-20px);
+}
+

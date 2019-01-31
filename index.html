@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Daily planner</title>
+</head>
+
+<body>
+
+    <div class="top">
+        <div class="Daily-plan">
+                <h1 class="Daily-plan__title">
+                    Daily planner
+                </h1>
+            <div class="Daily-plan__note">
+               NB: what determines the catergory under which your task will be placed is the start time
+            </div>
+
+            <div class="Daily-plan__morning clearfix">
+                <div class="Daily-plan__morning--text">morning tasks</div>
+                <div class="right clearfix">
+                    <div class="Daily-plan__morning--value">0</div>
+                </div>
+            </div>
+
+            <div class="Daily-plan__afternoon clearfix">
+                <div class="Daily-plan__afternoon--text">afternoon tasks</div>
+                <div class="right">
+                    <div class="Daily-plan__afternoon--value">0</div>
+                </div>
+            </div>
+            <div class="Daily-plan__night clearfix">
+                <div class="Daily-plan__night--text">night tasks</div>
+                <div class="right">
+                    <div class="Daily-plan__night--value">0</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            
+        </div>
+    </div>
+
+
+
+    <div class="bottom">
+        <div class="add">
+            <div class="add__container">
+                <input type="text" class="add__plan" placeholder="Add plan">
+
+                <label for="startTime" class="add__interval">start</label>
+                <input type="time" name="starTtime"  class="add__time startTime"  value="06:00">
+                   
+
+                <label for="endTime" class="add__interval">to</label>
+                <input type="time" name="endtime"  class="add__time  endTime"   value="12:00">
+
+                <button class="add__btn">
+                    add
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="tasks">
+                <div class="task-morning">
+
+               
+                    <div class="tasks__title tasks__title--morning">
+                        morning
+                    </div>
+                     
+                    <!-- 
+                        <div class="item clearfix" id="morningPlan-0">
+                            <div class="item__morningPlan">cook</div>
+                            <div class="right clearfix">
+                                <div class="item__time">6:00am - 8:00am</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item clearfix" id=morningPlan-1">
+                            <div class="item__morningPlan">Sold car</div>
+                            <div class="right clearfix">
+                                <div class="item__time">2:00am - 4:00am</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    -->
+                </div>       
+            
+            <div>
+                <div class="task-afternoon">
+                    <div class=" tasks__title tasks__title--afternoon">
+                        afternoon            
+                    </div>
+                     
+                    <!--
+                        <div class="item clearfix" id="afternoonPlan-0">
+                            <div class="item__afternoonPlan">wash</div>
+                            <div class="right clearfix">
+                                <div class="item__time">1:00pm - 3:00am</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item clearfix" id="afternoonPlan-1">
+                            <div class="item__afternoonPlan">Sold car</div>
+                            <div class="right clearfix">
+                                <div class="item__time">3:00pm - 5:00pm</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                     -->
+                </div>
+            </div>
+            <div>
+                <div class="task-night">
+                    <div class="tasks__title tasks__title--night">
+                        night
+                    </div>
+                     
+                    <!--
+                         <div class="item clearfix" id="nightPlan-0">
+                            <div class="item__nightPlan">Salary</div>
+                            <div class="right clearfix">
+                                <div class="item__time">4:00pm - 6:00pm</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item clearfix" id="nightPlan-1">
+                            <div class="item__nightPlan">Sold car</div>
+                            <div class="right clearfix">
+                                <div class="item__time">3:00pm - 4:00pm</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    -->
+                </div>
+            </div>
+      
+    </div>
+
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
